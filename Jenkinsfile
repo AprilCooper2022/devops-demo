@@ -1,0 +1,24 @@
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Source code will be checked out by Jenkins'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building application'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests'
+            }
+        }
+    }
+}
